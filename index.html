@@ -36,12 +36,33 @@
         <!-- Gallery -->
         <div class="product-gallery">
           <div class="gallery__main">
-            <div class="gallery__main-img" id="main-img" aria-live="polite" aria-label="Product image"></div>
+            <img class="gallery__main-img" id="main-img"
+                 src="images/aura-main.jpg"
+                 alt="AURA ONE headphones — front view"
+                 loading="eager">
           </div>
           <div class="gallery__thumbs" role="group" aria-label="Product views">
-            <button class="gallery__thumb is-active" data-bg="#EFEAE0" aria-label="Front view" aria-pressed="true" style="background:#EFEAE0"></button>
-            <button class="gallery__thumb" data-bg="#E5DFD3" aria-label="Side view" aria-pressed="false" style="background:#E5DFD3"></button>
-            <button class="gallery__thumb" data-bg="#D8D0C4" aria-label="Detail view" aria-pressed="false" style="background:#D8D0C4"></button>
+            <button class="gallery__thumb is-active"
+                    data-src="images/aura-side.jpg"
+                    data-alt="AURA ONE headphones — side view"
+                    aria-label="Side view"
+                    aria-pressed="true">
+              <img src="images/aura-side.jpg" alt="" loading="lazy">
+            </button>
+            <button class="gallery__thumb"
+                    data-src="images/aura-case.jpg"
+                    data-alt="AURA ONE headphones — travel case"
+                    aria-label="Travel case"
+                    aria-pressed="false">
+              <img src="images/aura-case.jpg" alt="" loading="lazy">
+            </button>
+            <button class="gallery__thumb"
+                    data-src="images/aura-cable.jpg"
+                    data-alt="AURA ONE headphones — cable accessory"
+                    aria-label="Cable accessory"
+                    aria-pressed="false">
+              <img src="images/aura-cable.jpg" alt="" loading="lazy">
+            </button>
           </div>
         </div>
 

@@ -1,8 +1,7 @@
 /* ============================================================
    PRODUCT GALLERY — THUMBNAIL SWAP
-   Clicking a thumbnail updates the large main image by
-   swapping its background colour (placeholder) and the
-   active thumb ring.
+   Clicking a thumbnail updates the large main image src/alt
+   and marks the thumb as active.
    ============================================================ */
 (function () {
   var mainImg = document.getElementById('main-img');
@@ -10,24 +9,18 @@
 
   if (!mainImg || !thumbs.length) return;
 
-  // Initialise main image from the first active thumb
-  var initial = document.querySelector('.gallery__thumb.is-active');
-  if (initial) mainImg.style.background = initial.dataset.bg;
-
   thumbs.forEach(function (thumb) {
     thumb.addEventListener('click', function () {
-      // Clear active state from all thumbs
       thumbs.forEach(function (t) {
         t.classList.remove('is-active');
         t.setAttribute('aria-pressed', 'false');
       });
 
-      // Set active state on clicked thumb
       thumb.classList.add('is-active');
       thumb.setAttribute('aria-pressed', 'true');
 
-      // Update main image
-      mainImg.style.background = thumb.dataset.bg;
+      mainImg.src = thumb.dataset.src;
+      mainImg.alt = thumb.dataset.alt;
     });
   });
 })();
