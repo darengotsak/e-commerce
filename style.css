@@ -388,6 +388,14 @@ button {
   width: 100%;
   aspect-ratio: 3/4;
   background: var(--bg-soft);
+  overflow: hidden;
+}
+
+.story__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .story__content {
