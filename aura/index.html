@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AURA ONE — Premium over-ear headphones. Studio-grade drivers, active noise cancelling, 40-hour battery.">
+  <title>AURA ONE — Premium Over-Ear Headphones</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo">AURA</a>
+      <nav class="navbar__nav" aria-label="Main navigation">
+        <a href="#">Shop</a>
+        <a href="#">Story</a>
+        <a href="#">Journal</a>
+        <a href="#" class="navbar__cart">Cart (1)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== PRODUCT HERO ===== -->
+    <section class="product-hero">
+      <div class="container product-hero__grid">
+
+        <!-- Gallery -->
+        <div class="product-gallery">
+          <div class="gallery__main">
+            <div class="gallery__main-img" id="main-img" aria-live="polite" aria-label="Product image"></div>
+          </div>
+          <div class="gallery__thumbs" role="group" aria-label="Product views">
+            <button class="gallery__thumb is-active" data-bg="#EFEAE0" aria-label="Front view" aria-pressed="true" style="background:#EFEAE0"></button>
+            <button class="gallery__thumb" data-bg="#E5DFD3" aria-label="Side view" aria-pressed="false" style="background:#E5DFD3"></button>
+            <button class="gallery__thumb" data-bg="#D8D0C4" aria-label="Detail view" aria-pressed="false" style="background:#D8D0C4"></button>
+          </div>
+        </div>
+
+        <!-- Product info -->
+        <div class="product-info">
+          <p class="product-label">AURA — Studio Series</p>
+          <h1 class="product-name">AURA ONE</h1>
+          <p class="product-price">&#x20AC; 449</p>
+
+          <div class="product-rating">
+            <span class="stars" aria-label="5 out of 5 stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+            <a href="#reviews" class="review-count">(127 reviews)</a>
+          </div>
+
+          <p class="product-desc">Engineered for those who listen with intention. AURA ONE combines studio-tuned 40mm drivers with intelligent noise cancellation for an immersive, fatigue-free listening experience.</p>
+
+          <!-- Colour selector -->
+          <div class="colour-selector">
+            <div class="colour-swatches" role="radiogroup" aria-label="Select colour">
+              <button class="colour-swatch is-active" data-colour="Charcoal" aria-label="Charcoal" aria-checked="true" role="radio" style="background:#2D2D2D"></button>
+              <button class="colour-swatch" data-colour="Ivory" aria-label="Ivory" aria-checked="false" role="radio" style="background:#F5F0E8"></button>
+              <button class="colour-swatch" data-colour="Sand" aria-label="Sand" aria-checked="false" role="radio" style="background:#C4A882"></button>
+            </div>
+            <p class="colour-label">Colour: <span id="colour-name">Charcoal</span></p>
+          </div>
+
+          <!-- Add to cart -->
+          <div class="product-actions">
+            <button class="btn-add-to-cart" type="button" id="add-to-cart">Add to cart</button>
+            <p class="shipping-note">Free shipping over &#x20AC;&nbsp;200 &middot; Usually ships within 2 days</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== FEATURE STRIP ===== -->
+    <section class="feature-strip">
+      <div class="container">
+        <div class="feature-strip__grid">
+
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true"></div>
+            <h3 class="feature-title">Active noise cancelling</h3>
+            <p class="feature-desc">Precision-tuned ANC blocks ambient noise without sacrificing audio clarity.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true"></div>
+            <h3 class="feature-title">40-hour battery</h3>
+            <p class="feature-desc">All-day listening on a single charge. Ten minutes of charge adds five hours.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true"></div>
+            <h3 class="feature-title">Studio-grade drivers</h3>
+            <p class="feature-desc">Custom 40mm dynamic drivers tuned in collaboration with mastering engineers.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true"></div>
+            <h3 class="feature-title">Memory foam ear cups</h3>
+            <p class="feature-desc">Slow-rebound foam contours to your ears for extended, fatigue-free wear.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== THE STORY ===== -->
+    <section class="story section">
+      <div class="container story__grid">
+        <div class="story__image-col">
+          <div class="story__image" aria-hidden="true"></div>
+        </div>
+        <div class="story__content">
+          <span class="section-label">Our story</span>
+          <h2 class="story__headline">Sound, <em>elevated.</em></h2>
+          <p class="story__body">We started AURA from a frustration with compromise. Every headphone we tried forced a trade-off — clarity for comfort, longevity for aesthetics, fidelity for portability. We decided the compromise was the problem, not the inevitability.</p>
+          <p class="story__body">Three years later, AURA ONE is the headphone we always wanted to own. It sounds like a studio monitor, wears like nothing, and outlasts the longest flights. Nothing compromised. Nothing missing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SPECIFICATIONS ===== -->
+    <section class="specs section">
+      <div class="container">
+        <div class="specs__header">
+          <span class="section-label">Specifications</span>
+        </div>
+        <div class="specs__table" role="table" aria-label="Product specifications">
+          <div class="specs__row" role="row">
+            <span class="specs__key" role="rowheader">Driver</span>
+            <span class="specs__val" role="cell">40mm custom-tuned dynamic</span>
+          </div>
+          <div class="specs__row" role="row">
+            <span class="specs__key" role="rowheader">Frequency response</span>
+            <span class="specs__val" role="cell">20Hz &ndash; 20kHz</span>
+          </div>
+          <div class="specs__row" role="row">
+            <span class="specs__key" role="rowheader">Battery life</span>
+            <span class="specs__val" role="cell">Up to 40 hours (ANC on)</span>
+          </div>
+          <div class="specs__row" role="row">
+            <span class="specs__key" role="rowheader">Weight</span>
+            <span class="specs__val" role="cell">265g</span>
+          </div>
+          <div class="specs__row" role="row">
+            <span class="specs__key" role="rowheader">Connectivity</span>
+            <span class="specs__val" role="cell">Bluetooth 5.3 &middot; 3.5mm analogue</span>
+          </div>
+          <div class="specs__row" role="row">
+            <span class="specs__key" role="rowheader">Materials</span>
+            <span class="specs__val" role="cell">Anodised aluminium &middot; vegan leather &middot; memory foam</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REVIEWS ===== -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <div class="reviews__header">
+          <span class="section-label">Reviews</span>
+          <h2 class="reviews__headline">What our customers say.</h2>
+        </div>
+        <div class="reviews__grid">
+
+          <article class="review-card">
+            <span class="stars stars--sm" aria-label="5 out of 5 stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+            <h3 class="review-title">Best headphones I've owned.</h3>
+            <p class="review-body">I've tried a dozen premium headphones over the years. AURA ONE is the first pair where I don't find myself wishing something were different. The sound is honest — not enhanced, just true.</p>
+            <p class="review-attribution">&#x2014; Sarah K., verified buyer</p>
+          </article>
+
+          <article class="review-card">
+            <span class="stars stars--sm" aria-label="5 out of 5 stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+            <h3 class="review-title">Quieter than silence.</h3>
+            <p class="review-body">I travel for work every week. The noise cancellation is the best I've experienced — better than competitors twice the price. Build quality feels considered without being conspicuous.</p>
+            <p class="review-attribution">&#x2014; Marcus T., verified buyer</p>
+          </article>
+
+          <article class="review-card">
+            <span class="stars stars--sm" aria-label="5 out of 5 stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+            <h3 class="review-title">Worth every penny.</h3>
+            <p class="review-body">Sceptical at first, given the price. Two months in, I can say without hesitation: this is the best purchase I've made in years. Comfort, battery life, and clarity are in a class of their own.</p>
+            <p class="review-attribution">&#x2014; Emma L., verified buyer</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RELATED PRODUCTS ===== -->
+    <section class="related section">
+      <div class="container">
+        <div class="related__header">
+          <span class="section-label">Complete the collection</span>
+        </div>
+        <div class="related__grid">
+
+          <a href="#" class="related-card">
+            <div class="related-card__img-wrap">
+              <div class="related-card__img" style="background:#EFEAE0"></div>
+            </div>
+            <h3 class="related-card__name">AURA Cable</h3>
+            <p class="related-card__price">&#x20AC; 29</p>
+          </a>
+
+          <a href="#" class="related-card">
+            <div class="related-card__img-wrap">
+              <div class="related-card__img" style="background:#E5DFD3"></div>
+            </div>
+            <h3 class="related-card__name">AURA Stand</h3>
+            <p class="related-card__price">&#x20AC; 79</p>
+          </a>
+
+          <a href="#" class="related-card">
+            <div class="related-card__img-wrap">
+              <div class="related-card__img" style="background:#D8D0C4"></div>
+            </div>
+            <h3 class="related-card__name">AURA Case</h3>
+            <p class="related-card__price">&#x20AC; 59</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter">
+      <div class="newsletter__inner">
+        <span class="section-label">Stay informed</span>
+        <h2 class="newsletter__headline">Stay in <em>tune.</em></h2>
+        <p class="newsletter__sub">New drops, editorial content, and early access &mdash; nothing more.</p>
+        <form class="newsletter__form" id="newsletter-form" novalidate>
+          <input type="email" class="newsletter__input" placeholder="Your email address" aria-label="Email address" required>
+          <button type="submit" class="newsletter__btn">Subscribe &#x2192;</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__logo">AURA</span>
+          <p class="footer__tagline">Premium audio, crafted for the intentional listener.</p>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__col-title">Shop</h3>
+          <ul>
+            <li><a href="#">Headphones</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">New arrivals</a></li>
+            <li><a href="#">Gift cards</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__col-title">Help</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping &amp; returns</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__col-title">Connect</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Spotify playlist</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 AURA Audio. All rights reserved.</p>
+        <p class="footer__city">Designed in London</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
